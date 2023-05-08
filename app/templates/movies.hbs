@@ -1,0 +1,9 @@
+{{page-title "Movies list"}}
+<p>movies works!</p>
+
+{{#each this.model as |movie|}}
+  <h3>{{movie.title}}</h3>
+  <p>year: {{movie.year}}</p>
+{{/each}}
+
+{{log 'movies' this.model}}
